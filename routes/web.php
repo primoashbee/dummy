@@ -11,9 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 Route::get('/sample','UserController@index');
 Route::get('/show/{id}','UserController@show');
 Route::get('/show','UserController@index');
+
+Route::get('/Clients/Create', function()
+{
+	return View::make('pages.add-client');
+});
+Route::get('/Clients', 'ClientController@Index');
+Route::post('/Clients','ClientController@CreateClient');
+Route::get('/Clients/Summary','ClientController@Summary');
+Route::get('/Clients/Summary/{id}','ClientController@Summary');
