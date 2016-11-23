@@ -49,6 +49,7 @@ class CreateClientsTable extends Migration
             $table->string('member_age')->nullable();
             $table->string('member_relationship')->nullable();
             $table->string('member_occupation')->nullable();
+            $table->string('member_occupation_years')->nullable();
             $table->string('member_monthly_income')->nullable();
             $table->string('member_address')->nullable();
             $table->timestamps();

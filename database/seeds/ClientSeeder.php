@@ -14,8 +14,14 @@ class ClientSeeder extends Seeder
         $timestamp = mt_rand(1, time());
 
         //Format that timestamp into a readable date string.
-        $randomDate = date("d M Y", $timestamp);
+      
+      
+
         for($x=0;$x<=50;$x++){
+        $year=rand(1990,2016);
+        $month=rand(10,12);
+        $day=rand(10,29);
+        $date = $year."-".$month."-".$day;
         $id = DB::table('clients')->insertGetId([
             'lastname'=>str_random(10),
             'firstname'=>str_random(10),
@@ -26,7 +32,7 @@ class ClientSeeder extends Seeder
             'mother_name'=>str_random(5),
             'spouse_name'=>str_random(5),
             'TIN'=>rand(0,1000),
-            'birthday'=>$randomDate,
+            'birthday'=>$date,
             'home_address'=>str_random(15),
             'home_year'=>rand(1990,2016),
             'business_address'=>str_random(15),
@@ -50,6 +56,7 @@ class ClientSeeder extends Seeder
             'member_age'=>rand(18,99),
             'member_relationship'=>str_random(10),
             'member_occupation'=>str_random(10),
+            'member_occupation_years'=>rand(0,20),
             'member_monthly_income'=>rand(1000,100000),
             'member_address'=>str_random(15),
             ]);

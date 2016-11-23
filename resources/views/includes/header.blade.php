@@ -239,22 +239,31 @@
                           
                         </li>
                         <li>
-                            <a href="/Clients"><i class="fa fa-users"></i> Clients<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-user "></i> &nbsp;Clients<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/Clients">View Clients</a>
+                                    <a href="/Clients"><span class="fa fa-eye"></span> View Clients</a>
                                 </li>
                                 <li>
-                                    <a href="/Clients/Create">Create Client</a>
+                                    <a href="/Clients/Create"><span class="fa fa-plus"></span> Create Client</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+                         <li>
+                            <a href="#"><i class="fa fa-users"></i> Cluster<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="/Cluster"><span class="fa fa-eye"></span> View Cluster</a>
+                                </li>
+                                <li>
+                                    <a href="/Cluster/Create"><span class="fa fa-plus"></span> Create Cluster</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>                      
                         <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                            <a href="/Cluster/Create"><i class="fa fa-edit fa-fw"></i> Create Cluster</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
